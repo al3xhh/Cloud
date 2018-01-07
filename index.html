@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Temperaturas globales desde 1750</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="Web/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom fonts for this template -->
+      <link href="Web/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+      <!-- Plugin CSS -->
+      <link href="Web/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="Web/css/creative.min.css" rel="stylesheet">
+
+   </head>
+
+   <body id="page-top">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Grupo D</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#problema">Problema</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#datos">Datos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#programa">Programa</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#resultados">Resultados</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#mejoras">Mejoras</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#trabajo">¿Cómo hemos trabajado?</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#capturas">Capturas de pantalla</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <header class="masthead text-center text-white d-flex">
+         <div class="container my-auto">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <h1 class="text-uppercase">
+                     <strong>Temperaturas globales desde 1750</strong>
+                  </h1>
+                  <hr>
+               </div>
+               <div class="col-lg-8 mx-auto">
+                  <p class="text-faded mb-5">Proyecto final de la asignatura Cloud y Big Data del grado Ingeniería Informática en la Universidad Complutense de Madrid</p>
+               </div>
+               <div class="col-lg-8 mx-auto">
+                  <ul class="text-faded">José Ángel Garrido Montoya</ul>
+                  <ul class="text-faded">Christian González García-Muñoz</ul>
+                  <ul class="text-faded">Alejandro Huertas Herrero</ul>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="bg-primary" id="problema">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">¿Qué problema queremos resolver?</h2>
+                  <hr class="light my-4">
+                  <p class="text-faded mb-4"> Hemos estudiado cómo han variado las temperaturas en distintas ciudades desde 1750. Para ello hemos visto: </p>
+                  <ul class="text-faded">Temperatura máxima, mínima y media por año.</ul>
+                  <ul class="text-faded">Temperatura máxima, mínima y media por estación.</ul>
+                  <ul class="text-faded">Temperatura máxima, mínima y media por agrupación de años (siglo, década, ...)</ul>
+                  <p class="text-faded"> Una vez recogidos los datos compararemos ciudades de diferentes países o continentes. </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="datos">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Nuestros datos</h2>
+                  <hr class="my-4">
+               </div>
+               <div class="col-lg-12 text-center">
+                  <p>Los datos han sido obtenidos de <a href="https://www.kaggle.com" target="_blank">Kaggle</a> y tienen un tamaño de unos 500mb</p>
+                  <hr class="my-4">
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box mt-5 mx-auto">
+                     <i class="fa fa-4x fa-calendar text-primary mb-3 sr-icons"></i>
+                     <h3 class="mb-3">Fecha</h3>
+                     <p class="text-muted mb-0">Fecha en la que la temperatura fue recogida (YYYY-MM-DD)</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box mt-5 mx-auto">
+                     <i class="fa fa-4x fa-thermometer-quarter text-primary mb-3 sr-icons"></i>
+                     <h3 class="mb-3">Temperatura</h3>
+                     <p class="text-muted mb-0">Temperatura media recogida en esa fecha.</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box mt-5 mx-auto">
+                     <i class="fa fa-4x fa-building text-primary mb-3 sr-icons"></i>
+                     <h3 class="mb-3">Ciudad</h3>
+                     <p class="text-muted mb-0">Ciudad en la que se recogió la temperatura.</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                  <div class="service-box mt-5 mx-auto">
+                     <i class="fa fa-4x fa-globe text-primary mb-3 sr-icons"></i>
+                     <h3 class="mb-3">País</h3>
+                     <p class="text-muted mb-0">País al que pertenece dicha ciudad.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="bg-primary" id="programa">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">Nuestro programa y cómo funciona</h2>
+                  <hr class="light my-4">
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="mejoras">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">¿Qué mejoras se pueden hacer en nuestro proyecto?</h2>
+                  <hr class="my-4">
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="bg-primary" id="trabajo">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">¿Cómo hemos trabajado?</h2>
+                  <hr class="light my-4">
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="capturas">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Capturas de pantalla</h2>
+                  <hr class="my-4">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="bg-dark text-white">
+         <div class="container text-center">
+            <h2 class="mb-4">Visita nuestro github para ver todo el código</h2>
+            <a class="btn btn-light btn-xl sr-button" href="https://github.com/al3xhh/Cloud.git" target="_blank">Ir al github</a>
+         </div>
+      </section>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="Web/vendor/jquery/jquery.min.js"></script>
+      <script src="Web/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="Web/vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="Web/vendor/scrollreveal/scrollreveal.min.js"></script>
+      <script src="Web/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+      <!-- Custom scripts for this template -->
+      <script src="Web/js/creative.min.js"></script>
+
+   </body>
+
+</html>
