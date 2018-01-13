@@ -1,7 +1,7 @@
 import sys
 
-cities = ['Sacramento', 'New York', 'Mexico', 'Recife', 'La Serena', 'Madrid',
-            'Berlin', 'Moscow', 'Tripoli', 'Johannesburg', 'Singapore', 'Melbourne', 'Peking', 'New Delhi']
+cities = ['Berlin', 'Brisbane', 'Caracas', 'Fez', 'La Serena', 'Madrid', 'Melbourne',
+ 'Mexico', 'Moscow', 'New York', 'Peking', 'Sacramento', 'Shanghai', 'Tripoli']
 
 def seasons(month):
     if month in [12, 1, 2]:

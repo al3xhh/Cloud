@@ -6,11 +6,11 @@ fileText = sys.argv[1]
 
 with open('maxMinYears.csv', 'r') as inF:
         for line in inF:
-            minYear = line.split(";")[0]
-            maxYear = line.split(";")[1]
+            line = line.strip()
+            minYear = line.split(";")[0][:len(line.split(";")[0]) - 1] + "0"
+            maxYear = line.split(";")[1][:len(line.split(";")[1]) - 1] + "0"
 
-years = [x for x in xrange(int(minYear), int(maxYear) + 1)]
-
+years = [x for x in xrange(int(minYear) + 10, int(maxYear) + 1, 10)]
 cities = []
 with open("configFile", 'r') as inF:
         for line in inF:
@@ -19,7 +19,7 @@ with open("configFile", 'r') as inF:
 data = []
 with open(fileText, 'r') as inF:
         for line in inF:
-            if line.split(";")[0] in cities and line.split(";")[2] == sys.argv[2]:
+            if line.split(";")[0] in cities:
                 data.append(line.strip())
 citiesData = []
 key = None
@@ -32,7 +32,7 @@ for line in data:
             citiesData.append(temperature)
         temperature = []
         key = currentKey
-    temperature.append(float(splitedLine[3]))
+    temperature.append(float(splitedLine[2]))
 citiesData.append(temperature)
 
 
@@ -40,7 +40,6 @@ citiesData.append(temperature)
 pattern = ['k', 'k--', 'k:']
 
 fig, ax = plt.subplots()
-print cities
 for i in xrange(0, len(cities)):
     ax.plot(years, citiesData[i], pattern[i], label=cities[i])
 
@@ -59,4 +58,4 @@ bb.x1 += xOffset
 legend.set_bbox_to_anchor(bb, transform = ax.transAxes)
 
 #plt.show()
-plt.savefig("./results/" + sys.argv[3] + '.png',  bbox_inches='tight')
+plt.savefig("./results/" + sys.argv[2] + '.png',  bbox_inches='tight')
