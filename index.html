@@ -88,13 +88,13 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-8 mx-auto text-center">
-                  <h2 class="section-heading text-white">¿Qué problema queremos resolver?</h2>
+                  <h2 class="section-heading text-white">¿Qué problema hemos resuelto?</h2>
                   <hr class="light my-4">
                   <p class="text-faded mb-4"> Hemos estudiado cómo han variado las temperaturas en distintas ciudades desde 1750. Para ello hemos visto: </p>
-                  <ul class="text-faded">Temperatura máxima, mínima y media por año.</ul>
-                  <ul class="text-faded">Temperatura máxima, mínima y media por estación.</ul>
-                  <ul class="text-faded">Temperatura máxima, mínima y media por agrupación de años (siglo, década, ...)</ul>
-                  <p class="text-faded"> Una vez recogidos los datos compararemos ciudades de diferentes países o continentes. </p>
+                  <ul class="text-faded">Temperatura media por año.</ul>
+                  <ul class="text-faded">Temperatura media por estación.</ul>
+                  <ul class="text-faded">Temperatura máxima, mínima y media por agrupación de años (décadas y siglos)</ul>
+                  <p class="text-faded"> Una vez recogidos los datos hemos comparado ciudades de diferentes continentes. </p>
                </div>
             </div>
          </div>
@@ -146,48 +146,97 @@
             </div>
          </div>
       </section>
-      
+
       <section class="bg-primary" id="programa">
          <div class="container">
             <div class="row">
                <div class="col-lg-8 mx-auto text-center">
                   <h2 class="section-heading text-white">Nuestro programa y cómo funciona</h2>
                   <hr class="light my-4">
+                  <div class="text-faded">Lo primero que hicimos fue limpiar los datos utilizando la librería pandas.</div>
+                  <br>
+                  <div class="text-faded">A continuación creamos un script en bash que tiene las siguientes partes:</div>
+                  <br>
+                  <ul class="text-faded">Se ejecutan el mapper y reducer correspondientes para conseguir un csv con los datos 
+                     que necesitamos. Por ejemplo, en el caso de la media por año, el mapper se encarga de emitir como clave
+                     la ciudad y el año y como valor la temperatura. Y el reducer se encarga de calcular la media de cada año 
+                     en cada ciudad.
+                  </ul>
+                  <ul class="text-faded">A continuación, con los datos generados en el paso anterior se genera una gráfica que
+                     compara ciudades dentro del mismo continente.
+                  </ul>
+                  <ul class="text-faded">Los dos pasos anteriores se ejecutan para la media por años, la media por estaciones
+                     y la media por agrupaciones de años.
+                  </ul>
                </div>
             </div>
          </div>
       </section>
-      
-      <section id="mejoras">
+
+      <section id="resultados">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">¿Qué mejoras se pueden hacer en nuestro proyecto?</h2>
+                  <h2 class="section-heading">Resultados del análisis</h2>
                   <hr class="my-4">
                </div>
             </div>
+            <div class="row text-center">
+               <div class="col-md-6">Temperaturas medias por año</div>
+               <div class="col-md-6">Temperaturas medias en invierno en Norte América</div>
+            </div>
+            <div class="row">
+               <img class="col-md-6" src="Graphics/NorthAmericaAvgYear.png" height="400">
+               <img class="col-md-6" src="Graphics/NorthAmericaWinter.png" height="400">
+            </div>
+            <div class="row text-center">
+               <div class="col-md-6">Temperaturas medias por décadas en Norte América</div>
+               <div class="col-md-6">Temperaturas medias por siglo</div>
+            </div>
+            <div class="row">
+               <img class="col-md-6" src="Graphics/NorthAmericaDecades.png" height="400">
+               <img class="col-md-6" src="Graphics/AverageTemperatureByCentury.png" height="400">
+            </div>
+            <div class="text-center">
+               El resto de resultados están disponibles pinchando <a href="https://github.com/al3xhh/Cloud/tree/master/Graphics"> aquí</a>
+            </div>
          </div>
       </section>
-      
-      <section class="bg-primary" id="trabajo">
+
+      <section class="bg-primary" id="mejoras">
          <div class="container">
             <div class="row">
                <div class="col-lg-8 mx-auto text-center">
-                  <h2 class="section-heading text-white">¿Cómo hemos trabajado?</h2>
+                  <h2 class="section-heading text-white">Mejoras</h2>
                   <hr class="light my-4">
                </div>
             </div>
          </div>
       </section>
-      
-      <section id="capturas">
+
+      <section id="trabajo">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Capturas de pantalla</h2>
+                  <h2 class="section-heading">¿Cómo hemos trabajado?</h2>
                   <hr class="my-4">
                </div>
             </div>
+            <p style="text-aligment: justify"></p>
+         </div>
+      </section>
+
+      <section class="bg-primary" id="capturas">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">Capturas de pantalla</h2>
+                  <hr class="light my-4">
+               </div>
+            </div>
+            <div class="row">
+               <img class="col-md-6" src="Web/img/SourceCode.png" height="500">
+               <img class="col-md-6" src="Web/img/SourceCode1.png" height="500"></div>
          </div>
       </section>
 
